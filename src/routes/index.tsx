@@ -56,6 +56,13 @@ const projects = [
   { number: "03", category: "AI", title: "AI-Based Projects", description: "Beginner-level experiments exploring AI tools, automation and useful prompt-driven workflows.", tech: ["AI Tools", "Python", "Prompts"], color: "text-mint" },
 ];
 
+const achievements = [
+  { icon: Code2, title: "Python projects", text: "Completed practical Python programming projects." },
+  { icon: Globe2, title: "Website published", text: "Built and published a website using GitHub." },
+  { icon: Gamepad2, title: "University eSports", text: "Participated in university-level eSports activities." },
+  { icon: BrainCircuit, title: "AI exploration", text: "Developed practical experience with AI tools and prompt engineering." },
+];
+
 function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
