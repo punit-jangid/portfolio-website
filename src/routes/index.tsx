@@ -135,12 +135,7 @@ function Index() {
         <section id="achievements" className="scroll-mt-20 py-20">
           <div className="mx-auto max-w-6xl px-5"><p className="font-mono text-sm font-bold uppercase text-coral">Progress so far</p><h2 className="mt-2 font-display text-4xl font-bold sm:text-5xl">Achievements</h2>
             <div className="mt-10 grid gap-5 sm:grid-cols-2">
-              {[
-                [Code2, "Python projects", "Completed practical Python programming projects."],
-                [Globe2, "Website published", "Built and published a website using GitHub."],
-                [Gamepad2, "University eSports", "Participated in university-level eSports activities."],
-                [BrainCircuit, "AI exploration", "Developed practical experience with AI tools and prompt engineering."],
-              ].map(([Icon, title, text], index) => { const ItemIcon = Icon as typeof Award; return <article key={String(title)} className="grid grid-cols-[auto_minmax(0,1fr)] gap-4 rounded-2xl border-2 border-ink bg-card p-5 shadow-[4px_4px_0_var(--ink)]"><span className="grid size-12 shrink-0 place-items-center rounded-full bg-lemon"><ItemIcon size={24} /></span><div className="min-w-0"><p className="font-mono text-xs text-coral">0{index + 1}</p><h3 className="mt-1 font-display text-lg font-bold">{String(title)}</h3><p className="mt-1 text-sm leading-relaxed text-ink/65">{String(text)}</p></div></article>; })}
+              {achievements.map(({ icon: ItemIcon, title, text }, index) => <article key={title} className="grid grid-cols-[auto_minmax(0,1fr)] gap-4 rounded-2xl border-2 border-ink bg-card p-5 shadow-[4px_4px_0_var(--ink)]"><span className="grid size-12 shrink-0 place-items-center rounded-full bg-lemon"><ItemIcon size={24} /></span><div className="min-w-0"><p className="font-mono text-xs text-coral">0{index + 1}</p><h3 className="mt-1 font-display text-lg font-bold">{title}</h3><p className="mt-1 text-sm leading-relaxed text-ink/65">{text}</p></div></article>)}
             </div>
           </div>
         </section>
