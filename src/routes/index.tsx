@@ -36,6 +36,7 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Punit Jangid | B.Tech CSE Student Portfolio" },
       { name: "description", content: "Portfolio of Punit Jangid, a first-year B.Tech CSE student at JECRC University building Python, API and AI-powered desktop projects." },
+      { name: "google-site-verification", content: "JPwlF260AyqyLtSwmDnW3YTKnTEkg7FIeJOMDrz93hU" },
       { property: "og:title", content: "Punit Jangid | Student Developer" },
       { property: "og:description", content: "Projects like FRIDAY AI, skills, achievements and contact details of Punit Jangid." },
       { property: "og:type", content: "website" },
